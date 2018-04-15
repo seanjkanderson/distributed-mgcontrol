@@ -1,0 +1,3326 @@
+Model {
+  Name			  "mg_simulator_qgen"
+  Version		  9.0
+  SavedCharacterEncoding  "ISO-8859-1"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.335"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+    NumResetEvents	    0
+    HasInitializeEvent	    0
+    HasTerminateEvent	    0
+    IsExportFunctionModel   0
+    NumParameterArguments   0
+    NumExternalFileReferences 0
+    OrderedModelArguments   1
+  }
+  LogicAnalyzerGraphicalSettings ""
+  LogicAnalyzerPlugin	  "on"
+  LogicAnalyzerSignalOrdering ""
+  DiagnosticSuppressor	  "on"
+  SuppressorTable	  "22 serialization::archive 11 0 6 0 0 0 0 0"
+  CustomCodeFunctionData  ""
+  SLCCPlugin		  "on"
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  InitFcn		  "mg_simulator_init"
+  LastSavedArchitecture	  "maci64"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [27.0, 62.0, 603.0, 647.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[565.0, 471.0]
+	ZoomFactor		[0.7665322461460865]
+	Offset			[-68.821683980389025, -143.22777963227156]
+      }
+      Object {
+	$PropName		"DockComponentsInfo"
+	$ObjectID		6
+	$ClassName		"Simulink.DockComponentInfo"
+	Type			"GLUE2:PropertyInspector"
+	ID			"Property Inspector"
+	Visible			[0]
+	CreateCallback		""
+	UserData		""
+	Floating		[0]
+	DockPosition		"Right"
+	Width			[640]
+	Height			[480]
+      }
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABzAP///wAAAAEAAAAAAAAAAPwCA"
+      "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
+      "QBjAHQAbwByAAAAAAD/////AAAALgD///8AAAJbAAACEgAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAACE/////wAAAAAAAAAA/////wEAAAD2/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFL/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAIs/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+    }
+  }
+  HideAutomaticNames	  on
+  Created		  "Thu Sep 21 13:50:08 2017"
+  Creator		  "manaswini"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "seananderson"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Mar 21 13:48:03 2018"
+  RTWModifiedTimeStamp	  443540826
+  ModelVersionFormat	  "1.%<AutoIncrement:335>"
+  SampleTimeColors	  on
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  PortDataTypeDisplayFormat "AliasTypeOnly"
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  on
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  VariantCondition	  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  BlockVariantConditionDataTip off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  FunctionConnectors	  off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  VisualizeLoggedSignalsWhenLoggingToFile off
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    7
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "mg_simulator_qgen"
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "mg_simulator_qgen"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      ""
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  OrderedModelArguments	  on
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      8
+      Version		      "1.17.1"
+      DisabledProps	      []
+      Description	      ""
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  9
+	  Version		  "1.17.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  StartTime		  "0.0"
+	  StopTime		  "Tsim"
+	  AbsTol		  "auto"
+	  FixedStep		  ".005"
+	  InitialStep		  "auto"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "Ts"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-6"
+	  EnableMultiTasking	  on
+	  ConcurrentTasks	  off
+	  Solver		  "VariableStepAuto"
+	  SolverName		  "VariableStepAuto"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverInfoToggleStatus  on
+	  IsAutoAppliedInSIP	  off
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	  SampleTimeProperty	  []
+	  DecoupledContinuousIntegration off
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  10
+	  Version		  "1.17.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  StreamToWorkspace	  off
+	  StreamVariableName	  "streamout"
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	  LoggingToFile		  off
+	  DatasetSignalFormat	  "timeseries"
+	  LoggingFileName	  "out.mat"
+	  LoggingIntervals	  "[-inf, inf]"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  11
+	  Version		  "1.17.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  DefaultParameterBehavior "Tunable"
+	  UseDivisionForNetSlopeComputation "off"
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  AdvancedOptControl	  ""
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  PassReuseOutputArgsThreshold 12
+	  ExpressionDepthLimit	  2147483647
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "off"
+	  AccelVerboseBuild	  off
+	  OptimizeBlockOrder	  "off"
+	  OptimizeDataStoreBuffers on
+	  BusAssignmentInplaceUpdate on
+	  DifferentSizesBufferReuse off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  12
+	  Version		  "1.17.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "UseOnlyExistingSharedCode"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "none"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "none"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  ExportedTasksRateTransMsg "none"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "warning"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  UseOnlyExistingSharedCode "error"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  AllowSymbolicDim	  on
+	  RowMajorDimensionSupport off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  ChecksumConsistencyForSSReuse	"none"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  SymbolicDimMinMaxWarning "warning"
+	  LossOfSymbolicDimsSimulationWarning "warning"
+	  LossOfSymbolicDimsCodeGenerationWarning "error"
+	  SymbolicDimsDataTypeCodeGenerationDiagnostic "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnreachableExecutionPathDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  SFTemporalDelaySmallerThanSampleTimeDiag "warning"
+	  SFSelfTransitionDiag	  "warning"
+	  SFExecutionAtInitializationDiag "none"
+	  SFMachineParentedDataDiag "warning"
+	  IntegerSaturationMsg	  "warning"
+	  AllowedUnitSystems	  "all"
+	  UnitsInconsistencyMsg	  "warning"
+	  AllowAutomaticUnitConversions	on
+	  RCSCRenamedMsg	  "warning"
+	  RCSCObservableMsg	  "warning"
+	  ForceCombineOutputUpdateInSim	off
+	  UnitDatabase		  ""
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  13
+	  Version		  "1.17.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdBitPerSizeT	  32
+	  ProdBitPerPtrDiffT	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetBitPerSizeT	  32
+	  TargetBitPerPtrDiffT	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "32-bit Generic"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	  UseEmbeddedCoderFeatures on
+	  UseSimulinkCoderFeatures on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  14
+	  Version		  "1.17.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  EnableRefExpFcnMdlSchedulingChecks on
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelDependencies	  ""
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  15
+	  Version		  "1.17.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  SimCustomSourceCode	  ""
+	  SimCustomHeaderCode	  ""
+	  SimCustomInitializer	  ""
+	  SimCustomTerminator	  ""
+	  SimReservedNameArray	  []
+	  SimUserSources	  ""
+	  SimUserIncludeDirs	  ""
+	  SimUserLibraries	  ""
+	  SimUserDefines	  ""
+	  SimCustomCompilerFlags  ""
+	  SimCustomLinkerFlags	  ""
+	  SFSimEcho		  on
+	  SimCtrlC		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	  ModelFunctionsGlobalVisibility "on"
+	  CompileTimeRecursionLimit 50
+	  EnableRuntimeRecursion  on
+	  MATLABDynamicMemAlloc	  on
+	  MATLABDynamicMemAllocThreshold 65536
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  16
+	  Version		  "1.17.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    13
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateMissedCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  HardwareBoard		  "None"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  ""
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  RTWBuildHooks		  []
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomDefine		  ""
+	  CustomLAPACKCallback	  ""
+	  CustomFFTCallback	  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  CustomToolchainOptions  []
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "off"
+	  ObjectivePriorities	  []
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      17
+	      Version		      "1.17.1"
+	      Array {
+		Type			"Cell"
+		Dimension		27
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		Cell			"InternalIdentifier"
+		Cell			"CustomSymbolStrModelFcn"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"CustomUserTokenString"
+		Cell			"CustomSymbolStrEmxType"
+		Cell			"CustomSymbolStrEmxFcn"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      Comment		      ""
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      MangleLength	      1
+	      SharedChecksumLength    8
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrModelFcn "$R$N"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      CustomSymbolStrEmxType  "emxArray_$M$N"
+	      CustomSymbolStrEmxFcn   "emx$M$N"
+	      CustomUserTokenString   ""
+	      CustomCommentsFcn	      ""
+	      DefineNamingRule	      "None"
+	      DefineNamingFcn	      ""
+	      ParamNamingRule	      "None"
+	      ParamNamingFcn	      ""
+	      SignalNamingRule	      "None"
+	      SignalNamingFcn	      ""
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      StateflowObjectComments on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifierFile  ""
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	      ReservedNameArray	      []
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      18
+	      Version		      "1.17.1"
+	      Array {
+		Type			"Cell"
+		Dimension		18
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"GenerateAllocFcn"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"RemoveResetFunc"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		Cell			"RemoveDisableFunc"
+		Cell			"ExistingSharedCode"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C89/C90 (ANSI)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      MultiwordTypeDef	      "System defined"
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      ExistingSharedCode      ""
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Use local settings"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      CodeInterfacePackaging  "Nonreusable function"
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      RemoveDisableFunc	      off
+	      RemoveResetFunc	      off
+	      SupportVariableSizeSignals off
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      MDXCompliant	      off
+	      GRTInterface	      on
+	      GenerateAllocFcn	      off
+	      UseToolchainInfoCompliant	on
+	      GenerateSharedConstants on
+	      CoderGroups	      []
+	      AccessMethods	      []
+	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
+	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+	      ArrayLayout	      "Column-major"
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeMexArgs	      ""
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	      MultiInstanceErrorCode  "Error"
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SlCovCC.ConfigComp {
+	  $ObjectID		  19
+	  Version		  "1.17.1"
+	  DisabledProps		  []
+	  Description		  "Simulink Coverage Configuration Component"
+	  Name			  "Simulink Coverage"
+	  CovEnable		  off
+	  CovScope		  "EntireSystem"
+	  CovIncludeTopModel	  on
+	  RecordCoverage	  off
+	  CovPath		  "/"
+	  CovSaveName		  "covdata"
+	  CovCompData		  ""
+	  CovMetricSettings	  "dw"
+	  CovFilter		  ""
+	  CovHTMLOptions	  ""
+	  CovNameIncrementing	  off
+	  CovHtmlReporting	  on
+	  CovForceBlockReductionOff on
+	  CovEnableCumulative	  on
+	  CovSaveCumulativeToWorkspaceVar on
+	  CovSaveSingleToWorkspaceVar on
+	  CovCumulativeVarName	  "covCumulativeData"
+	  CovCumulativeReport	  off
+	  CovSaveOutputData	  on
+	  CovOutputDir		  "slcov_output/$ModelName$"
+	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovShowResultsExplorer  on
+	  CovReportOnPause	  on
+	  CovModelRefEnable	  "off"
+	  CovModelRefExcluded	  ""
+	  CovExternalEMLEnable	  off
+	  CovSFcnEnable		  on
+	  CovBoundaryAbsTol	  1e-05
+	  CovBoundaryRelTol	  0.01
+	  CovUseTimeInterval	  off
+	  CovStartTime		  0
+	  CovStopTime		  0
+	  CovMcdcMode		  "Masking"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      ExtraOptions	      ""
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    [ 204, 79, 1057, 634 ]
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    8
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    20
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    HideAutomaticName	    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    MarkupType		    "model"
+    UseDisplayTextAsClickCallback off
+    AnnotationType	    "note_annotation"
+    FixedHeight		    off
+    FixedWidth		    off
+    Interpreter		    "off"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "opaque"
+    RunInitForIconRedraw    "analyze"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via back propagation"
+      LockScale		      off
+      ConvertRealWorld	      "Real World Value (RWV)"
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Ground
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      Unit		      "inherit"
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      MATLABFcn
+      MATLABFcn		      "sin"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      Unit		      "inherit"
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      EnsureOutportIsVirtual  off
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+      MustResolveToSignalObject	off
+      OutputWhenUnConnected   off
+      OutputWhenUnconnectedValue "0"
+      VectorParamsAs1DForOutWhenUnconnected off
+    }
+    Block {
+      BlockType		      RateTransition
+      Integrity		      on
+      Deterministic	      on
+      InitialCondition	      "0"
+      OutPortSampleTimeOpt    "Specify"
+      OutPortSampleTimeMultiple	"1"
+      OutPortSampleTime	      "-1"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      Scope
+      DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
+      Floating		      off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      SystemSampleTime	      "-1"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Opaque		      off
+      MaskHideContents	      off
+      SFBlockType	      "NONE"
+      GeneratePreprocessorConditionals off
+      AllowZeroVariantControls off
+      PropagateVariantConditions off
+      TreatAsGroupedWhenPropagatingVariantConditions on
+      ContentPreviewEnabled   off
+      IsWebBlock	      off
+      IsObserver	      off
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      AllowDiffInputSizes     off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      SampleTime	      "1"
+    }
+  }
+  System {
+    Name		    "mg_simulator_qgen"
+    Location		    [27, 62, 630, 709]
+    Open		    on
+    PortBlocksUseCompactNotation off
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "77"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "320"
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      SID		      "163"
+      Position		      [85, 255, 105, 275]
+      ZOrder		      50
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Low-voltage microgrid"
+      SID		      "1"
+      Ports		      [4, 5]
+      Position		      [50, 54, 170, 126]
+      ZOrder		      -1
+      BackgroundColor	      "paleyellow"
+      CopyFcn		      "plecs('sl', 203);"
+      DeleteFcn		      "plecs('sl', 205);"
+      UndoDeleteFcn	      "plecs('sl', 206);"
+      LoadFcn		      "plecs('sl', 200);"
+      PreSaveFcn	      "plecs('sl', 211);"
+      PostSaveFcn	      "plecs('sl', 201);"
+      InitFcn		      "plecs('sl', 214);"
+      StartFcn		      "plecs('sl', 208);"
+      StopFcn		      "plecs('sl', 209);"
+      NameChangeFcn	      "plecs('sl', 210);"
+      DestroyFcn	      "plecs('sl', 207);"
+      PreCopyFcn	      "plecs('sl', 216);"
+      OpenFcn		      "plecs('sl', 202);"
+      ErrorFcn		      "plerrorfcn"
+      RequestExecContextInheritance off
+      Variant		      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		21
+	$ClassName		"Simulink.Mask"
+	Type			"PlecsCircuit"
+	Help			"web(['file:///' fullfile(plecsdoc, 'creatingacircuit.html')])"
+	Initialization		"% PLACE CUSTOM INITIALIZATIONS ABOVE\n% DO NOT REMOVE\nplecs('sl', 215);\n% DO NOT REMOVE"
+	SelfModifiable		"on"
+	Display			"disp('PLECS\\nCircuit')\n"
+	IconOpaque		"transparent"
+	Object {
+	  $PropName		  "Parameters"
+	  $ObjectID		  22
+	  $ClassName		  "Simulink.MaskParameter"
+	  Type			  "edit"
+	  Name			  "PLECSData"
+	  Prompt		  "PLECS Data (Do not delete or modify!)"
+	  Value			  "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"
+	  "="
+	  Evaluate		  "off"
+	  Visible		  "off"
+	}
+      }
+      System {
+	Name			"Low-voltage microgrid"
+	Location		[0, 23, 1280, 747]
+	Open			off
+	PortBlocksUseCompactNotation off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"1315"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  "1:399"
+	  Position		  [15, 15, 35, 35]
+	  ZOrder		  393
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In2"
+	  SID			  "1:410"
+	  Position		  [15, 50, 35, 70]
+	  ZOrder		  404
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In3"
+	  SID			  "1:411"
+	  Position		  [15, 85, 35, 105]
+	  ZOrder		  405
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In4"
+	  SID			  "1:412"
+	  Position		  [15, 120, 35, 140]
+	  ZOrder		  406
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  " GateMux "
+	  SID			  "1:312"
+	  Position		  [155, 164, 175, 186]
+	  ZOrder		  306
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  " In1 "
+	  SID			  "1:1312"
+	  Position		  [55, 15, 95, 35]
+	  ZOrder		  1305
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  " In2 "
+	  SID			  "1:1313"
+	  Position		  [55, 50, 95, 70]
+	  ZOrder		  1306
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  " In3 "
+	  SID			  "1:1314"
+	  Position		  [55, 85, 95, 105]
+	  ZOrder		  1307
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  " In4 "
+	  SID			  "1:1315"
+	  Position		  [55, 120, 95, 140]
+	  ZOrder		  1308
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  " InputMux "
+	  SID			  "1:400"
+	  Ports			  [4, 1]
+	  Position		  [155, 113, 175, 142]
+	  ZOrder		  394
+	  Inputs		  "[ 1 1 1 1 ]"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  " OutputDemux "
+	  SID			  "1:23"
+	  Ports			  [1, 5]
+	  Position		  [295, 103, 315, 127]
+	  ZOrder		  18
+	  Outputs		  "[ 1 1 1 1 4 ]"
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  " ProbeDemux "
+	  SID			  "1:4"
+	  Position		  [295, 160, 315, 180]
+	  ZOrder		  -4
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  " S-Function "
+	  SID			  "1:5"
+	  Ports			  [2, 2]
+	  Position		  [210, 120, 260, 160]
+	  ZOrder		  -5
+	  FunctionName		  "plecs"
+	  SFunctionDeploymentMode off
+	  EnableBusSupport	  off
+	  SFcnIsStateOwnerBlock	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "v_out_1"
+	  SID			  "1:13"
+	  Position		  [415, 15, 435, 35]
+	  ZOrder		  8
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "v_out_2"
+	  SID			  "1:15"
+	  Position		  [415, 50, 435, 70]
+	  ZOrder		  10
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "v_out_3"
+	  SID			  "1:16"
+	  Position		  [415, 85, 435, 105]
+	  ZOrder		  11
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "v_out_4"
+	  SID			  "1:17"
+	  Position		  [415, 120, 435, 140]
+	  ZOrder		  12
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Q_gen"
+	  SID			  "1:939"
+	  Position		  [415, 155, 435, 175]
+	  ZOrder		  932
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "4"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  " S-Function "
+	  SrcPort		  2
+	  Points		  [5, 0; 0, 20]
+	  DstBlock		  " ProbeDemux "
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  " GateMux "
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  " S-Function "
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  " InputMux "
+	  SrcPort		  1
+	  DstBlock		  " S-Function "
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  " S-Function "
+	  SrcPort		  1
+	  Points		  [5, 0; 0, -25]
+	  DstBlock		  " OutputDemux "
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3979
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  " In1 "
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3980
+	  SrcBlock		  " In1 "
+	  SrcPort		  1
+	  DstBlock		  " InputMux "
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3981
+	  SrcBlock		  "In2"
+	  SrcPort		  1
+	  DstBlock		  " In2 "
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3982
+	  SrcBlock		  " In2 "
+	  SrcPort		  1
+	  DstBlock		  " InputMux "
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  3983
+	  SrcBlock		  "In3"
+	  SrcPort		  1
+	  DstBlock		  " In3 "
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3984
+	  SrcBlock		  " In3 "
+	  SrcPort		  1
+	  DstBlock		  " InputMux "
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  3985
+	  SrcBlock		  "In4"
+	  SrcPort		  1
+	  DstBlock		  " In4 "
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3986
+	  SrcBlock		  " In4 "
+	  SrcPort		  1
+	  DstBlock		  " InputMux "
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  3987
+	  SrcBlock		  " OutputDemux "
+	  SrcPort		  1
+	  DstBlock		  "v_out_1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3988
+	  SrcBlock		  " OutputDemux "
+	  SrcPort		  2
+	  DstBlock		  "v_out_2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3989
+	  SrcBlock		  " OutputDemux "
+	  SrcPort		  3
+	  DstBlock		  "v_out_3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3990
+	  SrcBlock		  " OutputDemux "
+	  SrcPort		  4
+	  DstBlock		  "v_out_4"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3991
+	  SrcBlock		  " OutputDemux "
+	  SrcPort		  5
+	  DstBlock		  "Q_gen"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "MPC_DG_1"
+      SID		      "201"
+      Ports		      [1, 1]
+      Position		      [440, 5, 510, 35]
+      ZOrder		      80
+      MATLABFcn		      "mpc_run_nodewise_mdl_fast(u(1),u(2),u(3),u(4),u(5),u(6),u(7),u(8),u(9),u(10),u(11))"
+      SampleTime	      ".02"
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "MPC_DG_2"
+      SID		      "227"
+      Ports		      [1, 1]
+      Position		      [440, 70, 510, 100]
+      ZOrder		      100
+      MATLABFcn		      "mpc_run_nodewise_mdl_fast2(u(1),u(2:3),u(4:5),u(6),u(7),u(8),u(9),u(10),u(11),u(12),u(13))"
+      SampleTime	      ".02"
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "MPC_DG_3"
+      SID		      "230"
+      Ports		      [1, 1]
+      Position		      [440, 135, 510, 165]
+      ZOrder		      103
+      MATLABFcn		      "mpc_run_nodewise_mdl_fast2(u(1),u(2:3),u(4:5),u(6),u(7),u(8),u(9),u(10),u(11),u(12),u(13))"
+      SampleTime	      ".02"
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "MPC_DG_4"
+      SID		      "233"
+      Ports		      [1, 1]
+      Position		      [440, 200, 510, 230]
+      ZOrder		      106
+      MATLABFcn		      "mpc_run_nodewise_mdl_fast(u(1),u(2),u(3),u(4),u(5),u(6),u(7),u(8),u(9),u(10),u(11))"
+      SampleTime	      ".02"
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition"
+      SID		      "226"
+      Position		      [535, -1, 575, 41]
+      ZOrder		      99
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition1"
+      SID		      "228"
+      Position		      [535, 64, 575, 106]
+      ZOrder		      102
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition2"
+      SID		      "231"
+      Position		      [535, 129, 575, 171]
+      ZOrder		      105
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition3"
+      SID		      "234"
+      Position		      [535, 194, 575, 236]
+      ZOrder		      108
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Reactive droop gains"
+      SID		      "255"
+      Position		      [5, 155, 105, 195]
+      ZOrder		      119
+      Value		      "[n_Q1,n_Q2,n_Q3,n_Q4]"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope4"
+      SID		      "221"
+      Ports		      [1]
+      Position		      [620, -16, 650, 16]
+      ZOrder		      94
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData4'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','294.47303','MaxYLimReal','295.42278','YLabelReal','','MinYLim"
+      "Mag','294.47303','MaxYLimMag','295.42278','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',fals"
+      "e,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 "
+      "0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098"
+      " 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074509803"
+      "9215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'N"
+      "umLines',1,'LineNames',{{'Rate Transition'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct"
+      "('MinYLimReal','294.47303','MaxYLimReal','295.42278','YLabelReal','','MinYLimMag','294.47303','MaxYLimMag','295."
+      "42278','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColo"
+      "r',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;"
+      "1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745"
+      "098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr"
+      ".Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','X'),extmgr.Configuration('"
+      "Tools','Measurements',true,'Version','2017b')),'Version','2017b','Position',[661 173 666 446])"
+      NumInputPorts	      "1"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Supervisory Control On/Off"
+      SID		      "242"
+      Ports		      [5, 4]
+      Position		      [240, 280, 335, 330]
+      ZOrder		      115
+      BlockMirror	      on
+      RequestExecContextInheritance off
+      Variant		      off
+      System {
+	Name			"Supervisory Control On/Off"
+	Location		[24, 57, 627, 704]
+	Open			off
+	PortBlocksUseCompactNotation off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"60"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  "243"
+	  Position		  [600, 18, 630, 32]
+	  ZOrder		  115
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In2"
+	  SID			  "244"
+	  Position		  [600, 78, 630, 92]
+	  ZOrder		  116
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In3"
+	  SID			  "245"
+	  Position		  [600, 138, 630, 152]
+	  ZOrder		  117
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In4"
+	  SID			  "246"
+	  Position		  [600, 198, 630, 212]
+	  ZOrder		  118
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In5"
+	  SID			  "247"
+	  Position		  [320, 183, 350, 197]
+	  ZOrder		  119
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  "241"
+	  Ports			  [1, 4]
+	  Position		  [840, 411, 850, 449]
+	  ZOrder		  114
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Initialization"
+	  SID			  "240"
+	  Position		  [885, 415, 915, 445]
+	  ZOrder		  113
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Value			  "Init"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope"
+	  SID			  "315"
+	  Ports			  [2]
+	  Position		  [295, 121, 325, 154]
+	  ZOrder		  131
+	  ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr."
+	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
+	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain',true,'S"
+	  "erializedDisplays',{struct('MinYLimReal','-150.88785','MaxYLimReal','1357.99067','YLabelReal','','MinYLimMag',' 0.0"
+	  "0000','MaxYLimMag','1357.99067','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor'"
+	  ",[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666666666666"
+	  "67;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 "
+	  "0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156"
+	  "863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{"
+	  "'Switch','In1'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-150.88785','Ma"
+	  "xYLimReal','1357.99067','YLabelReal','','MinYLimMag',' 0.00000','MaxYLimMag','1357.99067','LegendVisibility','off',"
+	  "'XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450980"
+	  "3922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1"
+	  " 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;"
+	  "0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',tru"
+	  "e,'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Posit"
+	  "ion',[688 173 560 420])"
+	  NumInputPorts		  "2"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  SID			  "236"
+	  Position		  [315, 300, 365, 340]
+	  ZOrder		  109
+	  BlockMirror		  on
+	  Threshold		  "Thresh"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch1"
+	  SID			  "237"
+	  Position		  [315, 355, 365, 395]
+	  ZOrder		  110
+	  BlockMirror		  on
+	  Threshold		  "Thresh"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch2"
+	  SID			  "238"
+	  Position		  [315, 430, 365, 470]
+	  ZOrder		  111
+	  BlockMirror		  on
+	  Threshold		  "Thresh"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch3"
+	  SID			  "239"
+	  Position		  [315, 505, 365, 545]
+	  ZOrder		  112
+	  BlockMirror		  on
+	  Threshold		  "Thresh"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "trigger"
+	  SID			  "314"
+	  Ports			  [1]
+	  Position		  [430, 129, 460, 161]
+	  ZOrder		  130
+	  ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr."
+	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
+	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData3'),extmgr.Configuration('Visuals','Time Domain',true,'S"
+	  "erializedDisplays',{struct('MinYLimReal','-0.00118','MaxYLimReal','0.01064','YLabelReal','','MinYLimMag','0.00000',"
+	  "'MaxYLimMag','0.01064','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],"
+	  "'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745"
+	  "098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098"
+	  "039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Tit"
+	  "le','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'In5'}},'"
+	  "ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.00118','MaxYLimReal','0.01064'"
+	  ",'YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.01064','LegendVisibility','off','XGrid',true,'YGrid',true,'"
+	  "PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'Co"
+	  "lorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717"
+	  "647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0."
+	  "0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('To"
+	  "ols','Measurements',true,'Version','2017b')),'Version','2017b','Position',[677 254 560 249])"
+	  NumInputPorts		  "1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  "248"
+	  Position		  [60, 108, 90, 122]
+	  ZOrder		  120
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  SID			  "249"
+	  Position		  [60, 128, 90, 142]
+	  ZOrder		  121
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out3"
+	  SID			  "250"
+	  Position		  [60, 148, 90, 162]
+	  ZOrder		  122
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out4"
+	  SID			  "251"
+	  Position		  [60, 168, 90, 182]
+	  ZOrder		  123
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  312
+	  SrcBlock		  "Switch3"
+	  SrcPort		  1
+	  Points		  [-293, 0; 0, -350]
+	  DstBlock		  "Out4"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  306
+	  SrcBlock		  "In3"
+	  SrcPort		  1
+	  Points		  [2, 0; 0, 290]
+	  DstBlock		  "Switch2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  296
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [-66, 0; 0, -35]
+	  DstBlock		  "Switch1"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  307
+	  SrcBlock		  "In4"
+	  SrcPort		  1
+	  Points		  [16, 0; 0, 305]
+	  DstBlock		  "Switch3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  295
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [-20, 0; 0, -80]
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  294
+	  SrcBlock		  "Initialization"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  298
+	  SrcBlock		  "Demux"
+	  SrcPort		  4
+	  Points		  [-20, 0; 0, 95]
+	  DstBlock		  "Switch3"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  311
+	  SrcBlock		  "Switch2"
+	  SrcPort		  1
+	  Points		  [-272, 0; 0, -295]
+	  DstBlock		  "Out3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  309
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  Points		  [-112, 0]
+	  Branch {
+	    ZOrder		    341
+	    Points		    [0, -190]
+	    DstBlock		    "Scope"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    332
+	    Points		    [-153, 0]
+	    DstBlock		    "Out1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  305
+	  SrcBlock		  "In2"
+	  SrcPort		  1
+	  Points		  [9, 0; 0, 275]
+	  DstBlock		  "Switch1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  297
+	  SrcBlock		  "Demux"
+	  SrcPort		  3
+	  Points		  [-66, 0; 0, 30]
+	  DstBlock		  "Switch2"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  310
+	  SrcBlock		  "Switch1"
+	  SrcPort		  1
+	  Points		  [-279, 0; 0, -240]
+	  DstBlock		  "Out2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  308
+	  SrcBlock		  "In5"
+	  SrcPort		  1
+	  Points		  [27, 0]
+	  Branch {
+	    ZOrder		    340
+	    Points		    [0, -45]
+	    DstBlock		    "trigger"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    339
+	    Points		    [1, 0; 0, 130]
+	    Branch {
+	      ZOrder		      273
+	      Points		      [0, 55]
+	      Branch {
+		ZOrder			299
+		Points			[0, 75]
+		Branch {
+		  ZOrder		  279
+		  Points		  [0, 75]
+		  DstBlock		  "Switch3"
+		  DstPort		  2
+		}
+		Branch {
+		  ZOrder		  278
+		  DstBlock		  "Switch2"
+		  DstPort		  2
+		}
+	      }
+	      Branch {
+		ZOrder			274
+		DstBlock		"Switch1"
+		DstPort			2
+	      }
+	    }
+	    Branch {
+	      ZOrder		      272
+	      DstBlock		      "Switch"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Line {
+	  ZOrder		  304
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  Points		  [21, 0; 0, 280; -209, 0]
+	  Branch {
+	    ZOrder		    342
+	    Points		    [0, 43; -263, 0; 0, -203]
+	    DstBlock		    "Scope"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    334
+	    DstBlock		    "Switch"
+	    DstPort		    1
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Tuning parameters"
+      SID		      "15"
+      Position		      [10, -15, 100, 5]
+      ZOrder		      24
+      Value		      "[g_vector, N, v_ref, Ts, Q, R, W]"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      "Zero-Order\nHold"
+      SID		      "224"
+      Position		      [370, 5, 405, 35]
+      ZOrder		      97
+      ForegroundColor	      "red"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      "Zero-Order\nHold1"
+      SID		      "229"
+      Position		      [370, 70, 405, 100]
+      ZOrder		      101
+      ForegroundColor	      "red"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      "Zero-Order\nHold2"
+      SID		      "232"
+      Position		      [370, 135, 405, 165]
+      ZOrder		      104
+      ForegroundColor	      "red"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      "Zero-Order\nHold3"
+      SID		      "235"
+      Position		      [370, 200, 405, 230]
+      ZOrder		      107
+      ForegroundColor	      "red"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "sig_selector"
+      SID		      "200"
+      Ports		      [8, 4]
+      Position		      [230, -13, 345, 258]
+      ZOrder		      79
+      ErrorFcn		      "Stateflow.Translate.translate"
+      PermitHierarchicalResolution "ExplicitOnly"
+      TreatAsAtomicUnit	      on
+      RequestExecContextInheritance off
+      SFBlockType	      "MATLAB Function"
+      Variant		      off
+      System {
+	Name			"sig_selector"
+	Location		[223, 338, 826, 833]
+	Open			off
+	PortBlocksUseCompactNotation off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"38"
+	Block {
+	  BlockType		  Inport
+	  Name			  "tuning"
+	  SID			  "200::22"
+	  Position		  [20, 101, 40, 119]
+	  ZOrder		  13
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "out_1"
+	  SID			  "200::23"
+	  Position		  [20, 136, 40, 154]
+	  ZOrder		  14
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "out_2"
+	  SID			  "200::24"
+	  Position		  [20, 171, 40, 189]
+	  ZOrder		  15
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "out_3"
+	  SID			  "200::25"
+	  Position		  [20, 206, 40, 224]
+	  ZOrder		  16
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "out_4"
+	  SID			  "200::26"
+	  Position		  [20, 246, 40, 264]
+	  ZOrder		  17
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "n_Qi"
+	  SID			  "200::36"
+	  Position		  [20, 281, 40, 299]
+	  ZOrder		  27
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "timer"
+	  SID			  "200::30"
+	  Position		  [20, 316, 40, 334]
+	  ZOrder		  21
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Qgen"
+	  SID			  "200::37"
+	  Position		  [20, 351, 40, 369]
+	  ZOrder		  28
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  " Demux "
+	  SID			  "200::32"
+	  Ports			  [1, 1]
+	  Position		  [270, 280, 320, 320]
+	  ZOrder		  23
+	  Outputs		  "1"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  " SFunction "
+	  SID			  "200::31"
+	  Tag			  "Stateflow S-Function mg_simulator_qgen 2"
+	  Ports			  [8, 5]
+	  Position		  [180, 110, 230, 290]
+	  ZOrder		  22
+	  FunctionName		  "sf_sfun"
+	  PortCounts		  "[8 5]"
+	  SFunctionDeploymentMode off
+	  EnableBusSupport	  on
+	  SFcnIsStateOwnerBlock	  off
+	  Port {
+	    PortNumber		    2
+	    Name		    "sig1"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "sig2"
+	  }
+	  Port {
+	    PortNumber		    4
+	    Name		    "sig3"
+	  }
+	  Port {
+	    PortNumber		    5
+	    Name		    "sig4"
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  " Terminator "
+	  SID			  "200::33"
+	  Position		  [460, 291, 480, 309]
+	  ZOrder		  24
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "sig1"
+	  SID			  "200::5"
+	  Position		  [460, 101, 480, 119]
+	  ZOrder		  -5
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "sig2"
+	  SID			  "200::27"
+	  Position		  [460, 136, 480, 154]
+	  ZOrder		  18
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "sig3"
+	  SID			  "200::28"
+	  Position		  [460, 171, 480, 189]
+	  ZOrder		  19
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "sig4"
+	  SID			  "200::29"
+	  Position		  [460, 206, 480, 224]
+	  ZOrder		  20
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  327
+	  SrcBlock		  "tuning"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  328
+	  SrcBlock		  "out_1"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  329
+	  SrcBlock		  "out_2"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  330
+	  SrcBlock		  "out_3"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  331
+	  SrcBlock		  "out_4"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  5
+	}
+	Line {
+	  ZOrder		  332
+	  SrcBlock		  "n_Qi"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  6
+	}
+	Line {
+	  ZOrder		  333
+	  SrcBlock		  "timer"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  7
+	}
+	Line {
+	  ZOrder		  334
+	  SrcBlock		  "Qgen"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  8
+	}
+	Line {
+	  Name			  "sig1"
+	  ZOrder		  335
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  2
+	  DstBlock		  "sig1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "sig2"
+	  ZOrder		  336
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  3
+	  DstBlock		  "sig2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "sig3"
+	  ZOrder		  337
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  4
+	  DstBlock		  "sig3"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "sig4"
+	  ZOrder		  338
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  5
+	  DstBlock		  "sig4"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  339
+	  SrcBlock		  " Demux "
+	  SrcPort		  1
+	  DstBlock		  " Terminator "
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  340
+	  SrcBlock		  " SFunction "
+	  SrcPort		  1
+	  DstBlock		  " Demux "
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      ZOrder		      152
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      Points		      [67, 0]
+      Branch {
+	ZOrder			321
+	Points			[0, -55]
+	DstBlock		"sig_selector"
+	DstPort			7
+      }
+      Branch {
+	ZOrder			308
+	Points			[0, 1; 181, 0; 0, 59]
+	DstBlock		"Supervisory Control On/Off"
+	DstPort			5
+      }
+    }
+    Line {
+      ZOrder		      153
+      SrcBlock		      "Low-voltage microgrid"
+      SrcPort		      1
+      Points		      [23, 0; 0, -25]
+      DstBlock		      "sig_selector"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      154
+      SrcBlock		      "Low-voltage microgrid"
+      SrcPort		      2
+      Points		      [28, 0; 0, -5]
+      DstBlock		      "sig_selector"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      155
+      SrcBlock		      "Low-voltage microgrid"
+      SrcPort		      3
+      Points		      [33, 0; 0, 15]
+      DstBlock		      "sig_selector"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      157
+      SrcBlock		      "Tuning parameters"
+      SrcPort		      1
+      Points		      [0, 5]
+      DstBlock		      "sig_selector"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      156
+      SrcBlock		      "Low-voltage microgrid"
+      SrcPort		      4
+      Points		      [22, 0; 0, 35]
+      DstBlock		      "sig_selector"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      231
+      SrcBlock		      "Zero-Order\nHold"
+      SrcPort		      1
+      DstBlock		      "MPC_DG_1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      232
+      SrcBlock		      "sig_selector"
+      SrcPort		      1
+      Points		      [0, -5]
+      DstBlock		      "Zero-Order\nHold"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      233
+      SrcBlock		      "MPC_DG_1"
+      SrcPort		      1
+      DstBlock		      "Rate Transition"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      234
+      SrcBlock		      "Rate Transition"
+      SrcPort		      1
+      Points		      [17, 0]
+      Branch {
+	ZOrder			304
+	Points			[0, 265]
+	DstBlock		"Supervisory Control On/Off"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			280
+	Points			[1, 0; 0, -20]
+	DstBlock		"Scope4"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      241
+      SrcBlock		      "Zero-Order\nHold1"
+      SrcPort		      1
+      DstBlock		      "MPC_DG_2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      245
+      SrcBlock		      "MPC_DG_2"
+      SrcPort		      1
+      DstBlock		      "Rate Transition1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      246
+      SrcBlock		      "sig_selector"
+      SrcPort		      2
+      Points		      [0, -5]
+      DstBlock		      "Zero-Order\nHold1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      247
+      SrcBlock		      "Zero-Order\nHold2"
+      SrcPort		      1
+      DstBlock		      "MPC_DG_3"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      251
+      SrcBlock		      "MPC_DG_3"
+      SrcPort		      1
+      DstBlock		      "Rate Transition2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      253
+      SrcBlock		      "sig_selector"
+      SrcPort		      3
+      Points		      [0, -5]
+      DstBlock		      "Zero-Order\nHold2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      254
+      SrcBlock		      "Zero-Order\nHold3"
+      SrcPort		      1
+      DstBlock		      "MPC_DG_4"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      258
+      SrcBlock		      "MPC_DG_4"
+      SrcPort		      1
+      DstBlock		      "Rate Transition3"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      259
+      SrcBlock		      "sig_selector"
+      SrcPort		      4
+      Points		      [0, -5]
+      DstBlock		      "Zero-Order\nHold3"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      305
+      SrcBlock		      "Rate Transition1"
+      SrcPort		      1
+      Points		      [23, 0; 0, 210]
+      DstBlock		      "Supervisory Control On/Off"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      306
+      SrcBlock		      "Rate Transition2"
+      SrcPort		      1
+      Points		      [30, 0; 0, 155]
+      DstBlock		      "Supervisory Control On/Off"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      307
+      SrcBlock		      "Rate Transition3"
+      SrcPort		      1
+      Points		      [35, 0; 0, 100]
+      DstBlock		      "Supervisory Control On/Off"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      309
+      SrcBlock		      "Supervisory Control On/Off"
+      SrcPort		      1
+      Points		      [-265, 0; 0, -230]
+      DstBlock		      "Low-voltage microgrid"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      310
+      SrcBlock		      "Supervisory Control On/Off"
+      SrcPort		      2
+      Points		      [-272, 0; 0, -220]
+      DstBlock		      "Low-voltage microgrid"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      311
+      SrcBlock		      "Supervisory Control On/Off"
+      SrcPort		      3
+      Points		      [-279, 0; 0, -210]
+      DstBlock		      "Low-voltage microgrid"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      312
+      SrcBlock		      "Supervisory Control On/Off"
+      SrcPort		      4
+      Points		      [-286, 0; 0, -200]
+      DstBlock		      "Low-voltage microgrid"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      323
+      SrcBlock		      "Reactive droop gains"
+      SrcPort		      1
+      DstBlock		      "sig_selector"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      351
+      SrcBlock		      "Low-voltage microgrid"
+      SrcPort		      5
+      Points		      [12, 0; 0, 125]
+      DstBlock		      "sig_selector"
+      DstPort		      8
+    }
+  }
+}
+#Finite State Machines
+#
+#   Stateflow 80000012
+#
+#
+Stateflow {
+  machine {
+    id			    1
+    name		    "mg_simulator_qgen"
+    created		    "07-Mar-2018 16:18:14"
+    isLibrary		    0
+    sfVersion		    80000012
+    firstTarget		    19
+  }
+  chart {
+    id			    2
+    machine		    1
+    name		    "sig_selector"
+    windowPosition	    [422 539.941 189 413]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 3600 1200 1.180555555555556]
+    treeNode		    [0 3 0 0]
+    viewObj		    2
+    ssIdHighWaterMark	    19
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    chartFileNumber	    2
+    disableImplicitCasting  1
+    eml {
+      name		      "selector"
+    }
+    firstData		    4
+    firstTransition	    17
+    firstJunction	    16
+  }
+  state {
+    id			    3
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 0 0]
+    superState		    SUBCHART
+    subviewer		    2
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function [sig1, sig2, sig3, sig4] = selector(tuning, out_1, out_2,...\n                          "
+      "                  out_3, out_4, n_Qi, timer, Qgen)\n% tuning = [g_vector, N, v_ref, Ts, Q, R];\ng = tuning(1:4);"
+      "\nN = tuning(5);\nv_ref = tuning(6);\nTs = tuning(7);\nQ = tuning(8);\nR = tuning(9);\nW = tuning(10);\ndisp('')"
+      ";\n% disp(Qgen);\n% _________________________________________________________\n% mpc_run_nodewise_mdl_fast(v_k_i"
+      ", v_neighbors, ids, ...\n%                     self_id, N, v_ref, Q, W, R, t)\n% _______________________________"
+      "__________________________\nsig1 = [out_1, out_2, 2, 1, ...\n    N, v_ref, Q, W, R, timer, Ts]';\nsig2 = [out_2,"
+      " [out_1 out_3], [1 3], 2, ...\n    N, v_ref, Q, W, R, timer, Ts]';\nsig3 = [out_3, [out_2 out_4], [2 4], 3, ...\n"
+      "    N, v_ref, Q, W, R, timer, Ts]';\nsig4 = [out_4, out_3, 3, 4, ...\n    N, v_ref, Q, W, R, timer, Ts]';\n\nend"
+      "\n"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    4
+    ssIdNumber		    5
+    name		    "sig1"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 0 5]
+  }
+  data {
+    id			    5
+    ssIdNumber		    6
+    name		    "tuning"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 4 6]
+  }
+  data {
+    id			    6
+    ssIdNumber		    7
+    name		    "out_1"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 5 7]
+  }
+  data {
+    id			    7
+    ssIdNumber		    8
+    name		    "out_2"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 6 8]
+  }
+  data {
+    id			    8
+    ssIdNumber		    9
+    name		    "out_3"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 7 9]
+  }
+  data {
+    id			    9
+    ssIdNumber		    10
+    name		    "out_4"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 8 10]
+  }
+  data {
+    id			    10
+    ssIdNumber		    17
+    name		    "n_Qi"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 9 11]
+  }
+  data {
+    id			    11
+    ssIdNumber		    11
+    name		    "sig2"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 10 12]
+  }
+  data {
+    id			    12
+    ssIdNumber		    12
+    name		    "sig3"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 11 13]
+  }
+  data {
+    id			    13
+    ssIdNumber		    13
+    name		    "sig4"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 12 14]
+  }
+  data {
+    id			    14
+    ssIdNumber		    14
+    name		    "timer"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 13 15]
+  }
+  data {
+    id			    15
+    ssIdNumber		    18
+    name		    "Qgen"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 14 0]
+  }
+  junction {
+    id			    16
+    position		    [23.5747 49.5747 7]
+    chart		    2
+    subviewer		    2
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+    linkNode		    [2 0 0]
+  }
+  transition {
+    id			    17
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [28.125 13.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      16
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    2
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+    linkNode		    [2 0 0]
+  }
+  instance {
+    id			    18
+    machine		    1
+    name		    "sig_selector"
+    chart		    2
+  }
+  target {
+    id			    19
+    machine		    1
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    linkNode		    [1 0 0]
+  }
+}

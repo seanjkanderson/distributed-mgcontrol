@@ -1,0 +1,36 @@
+function x_k1 = estimator_pflow_dynamics2(v_k, p_noise_k, total)
+% total:= u_k, n_Qi, Q_L_i, Q_di, ids, i, Ts
+
+u_k = total(1);
+n_Qi = total(2);
+Q_L_i = total(3);
+Q_di = total(4);
+ids = total(5:6);
+i = total(7);
+Ts = total(8);
+
+B = zeros(4,4);
+B(1,2) = 1/10;
+B(2,3) = 1/10.67;
+B(3,4) = 1/9.82;
+B = B + B';
+
+v_neighbors = v_k(2:3);
+v_k = v_k(1);
+% define voltage dynamics
+j = 1;
+interm = 0;
+while j <= 2
+    interm = interm - v_k*v_neighbors(j)*abs(B(i,ids(j))) + v_k^2*abs(B(i,ids(j)));
+    j = j + 1;
+end
+
+X = zeros(2,1);
+X(1) = (1/B(i,(ids(1))));
+X(2) = (1/B(i,(ids(2))));
+x_k1 = [v_k + Ts*(-v_k - ...
+    n_Qi*(Q_L_i + interm - Q_di + p_noise_k(1)) + u_k);...
+     (v_k^2 - 2*X(1)*p_noise_k(2) + X(1)^2*(p_noise_k(2)^2)/(v_k^2))^.5;...
+     (v_k^2 - 2*X(2)*p_noise_k(3) + X(2)^2*(p_noise_k(3)^2)/(v_k^2))^.5];
+
+end
